@@ -46,19 +46,46 @@ a {
     color: black;
     text-decoration: none;
 }
-/* Main and Section Adjustments */
-.background-image h2 {
-    padding-top: 15px;
-    margin-right: 150px;
-    float: right;
-    bottom: 500%;
+/* About-Me, Work, Contact Me, Resume Section */
+
+.about-container,
+.work-container,
+.contact-container,
+.resume-container {
+    display: flex;   
 }
-    
+
+.about-container h2,
+.work-container h2,
+.contact-container h2,
+.resume-container h2 {
+    width: 10%;
+    margin: 20px auto;
+    border-right: 5px solid darkgoldenrod;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 3%;
+    height: 150px;
+}
+
+.about-container p,
+.work-container p,
+.contact-container p,
+.resume-container p {
+    width: 70%;
+    /* Sets top and bottom margin to 20px. Auto will center element */
+    margin: 20px auto;
+    background-color: beige;
+    font-size: large;
+  }
+
+
+
 #image {
-    height: 800px;
+    height: 200px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../assets/images/naturebg.JPG");
+    background-image: url("../images/naturebg.JPG");
     background-size: cover;
     background-position: center;
 }
